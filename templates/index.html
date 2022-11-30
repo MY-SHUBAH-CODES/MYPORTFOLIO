@@ -14,7 +14,6 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="{%static 'images/portfolio_logo.jpg'%}" class="logo">
                 <ul id="sidemenu">
                     <li><a href="#" style="font-weight:bold;">Home</a></li>
                     <li><a href="#" style="font-weight:bold;">About</a></li>
@@ -23,8 +22,12 @@
                     <li><a href="#" style="font-weight:bold;">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
+            
+            <img class="banner" src="{%static 'images/portfolio_logo.png'%}" class="logo" style="height:700px;width:1800px;">
+
             <div class="header-text">
                 <p style="text-decoration:underline;font-weight: bold;font-size:larger;font-style: oblique;">SOFTWARE  DEVELOPMENT</p>
                 <h1>Hi, I am <span>Shubham</span> Singh</h1>
@@ -37,7 +40,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="{%static '/images/mypicture.jpg'%}"  style="height:500px;width:500px">
+                    <img src="{%static 'images/mypicture.jpg'%}"  style="height:500px;width:500px">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -46,7 +49,7 @@
                     dolores totam libero impedit enim qui numquam similique dolor? Odit, enim quod?</p>
                     
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
@@ -154,7 +157,7 @@
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    <a href="personal-portfolio-img/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    <a href="{%static 'doc/Shubham.pdf'%}" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form>
